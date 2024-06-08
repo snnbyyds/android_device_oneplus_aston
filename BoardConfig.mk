@@ -23,6 +23,11 @@ TARGET_KERNEL_CONFIG += vendor/oplus/aston.config
 BOARD_ONEPLUS_DYNAMIC_PARTITIONS_SIZE := 16638803968
 BOARD_SUPER_PARTITION_SIZE := 16642998272
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+BOARD_POWER_CUSTOM_BOARD_LIB += \
+    vendor.oplus.hardware.touch-V1-ndk
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
