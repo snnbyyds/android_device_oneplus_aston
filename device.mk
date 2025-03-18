@@ -15,6 +15,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2376
 TARGET_SCREEN_WIDTH := 1080
 
+# Display
+PRODUCT_SYSTEM_PROPERTIES += \
+    sys.brightness.disable_gamma_conversion=true
+
 # Fingerprint
 $(call soong_config_set,surfaceflinger,udfps_lib,//device/oneplus/aston:libudfps_extension.aston)
 
