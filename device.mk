@@ -1,6 +1,5 @@
 #
 # Copyright (C) 2021-2025 The LineageOS Project
-#
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -16,10 +15,6 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2376
 TARGET_SCREEN_WIDTH := 1080
-
-# Display
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display_id_4630946342906530435.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946342906530435.xml
 
 # Fingerprint
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
